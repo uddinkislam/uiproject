@@ -1,0 +1,8 @@
+#table_head{
+    color: white;
+    background-color: black
+}
+.active{
+    background-color:lightgreen;
+    color:red;
+}
