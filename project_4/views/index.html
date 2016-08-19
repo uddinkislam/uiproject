@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <title>IACO TABLE</title>
+    <link rel="stylesheet" href = "/project_4/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+   <form name = "student" method="post">
+    <table class = "table table-striped table-condensed table-bordered table-hover">
+        <thead class = "active">
+            <tr>
+            <th> Label </th>
+            <th> Form Elements </th>    
+            </tr>
+        </thead>
+        <tbody>
+              <tr>
+            <td> username </td>
+            <td> <input type='text' name='uname' id='uname' placeholder="enter username" value="sample"> </td>   
+            </tr>
+             <tr>
+            <td> password </td>
+            <td> <input type = 'password' name = 'password' id='password' placeholder="enter password"> </td>
+            </tr>
+             <tr>
+            <td> sex </td>
+            <td> <input type ="radio" name = 'gender' value = "Male"> Male
+                <input type ="radio" name = 'gender' value = "Female"> Female
+                <input type ="radio" name = 'gender' value = "Other"> Other
+                 </td>
+            </tr>
+              <tr>
+            <td> Cars Owened </td>
+            <td> <input type ="checkbox" name = 'Toyotaa' value = "Toyota"> Toyota
+                <input type ="checkbox" name = 'Honda' value = "Honda"> Honda
+                <input type ="checkbox" name = 'Nissan' value = "Nissan"> Nissan
+                 </td>
+            </tr>
+              <tr>
+            <td> Country </td>
+            <td> <select name ="countries">
+                <option value="null">select a country </option>
+                <option value="afg"> Afghanistan </option>
+                <option value="alg"> Algeria </option>
+                <option value="alb"> Albania </option>
+                <option value="usa"> United States America </option>
+                </select> </td>
+            </tr>
+        
+        </tbody> 
+    </table>
+       <input type="submit" value="submit">
+    </form>
+    
+    
+  
+</body>
+</html>

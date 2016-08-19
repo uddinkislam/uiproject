@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+    <title>Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/project_4/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+   <form name = "customer-satisfaction" method="post">
+    <table class="table table-striped">
+        <thead class = "active">
+            <tr>
+            <th> <a class="heading"> IACO's Purchase Order </a> </th>
+            <th> Form E-1149 </th>    
+            </tr>
+        </thead>
+        <tbody>
+              <tr>
+            <td> Personal Details:
+                <br>
+                  Name:
+                <br>
+             <input type='text' name='name' id='name' placeholder="last name" value="">
+             <input type='text' name='uname' id='uname' placeholder="first name" value="">
+                  <br>
+                Organization:
+                <br>
+                <input type='text' name='company' id='company' placeholder="your company" value="">
+                  </td> 
+            
+            <td> Login Information:
+                <br>
+                <input type='text' name='uname' id='uname' placeholder="choose username" value="">
+                <br>
+                <input type='password' name='password' id='password' placeholder="choose password" value="">
+                  </td>   
+            </tr>
+             <tr>
+            <td> Email:
+                <br>
+            <input type='text' name='name' id='name' placeholder="example@gmail.com" value="">
+                <br>
+                Phone Number:
+                <br>
+                <input type='number' name='number' id='name' placeholder="+1-800-000-0000" value="">
+
+                 
+                 
+                 </td>
+            <td>                    Select the Security Question
+                <select name ="questions">
+                <option value="null">select a security question </option>
+                <option value="afg"> What was your high school name? </option>
+                <option value="alg"> What city your spouse meet? </option>
+                <option value="alb"> What was your first car's model? </option>
+                <option value="usa"> What is your pet's name? </option>
+                </select>
+  </td>
+            </tr>
+            
+           <tr>
+               <td>
+            <a class="survery"> Choose the Applications you want to purchase for your project from IACO Inc.</a>
+                   <td>
+            </tr>
+            
+              <tr>
+                  
+                  <td>
+                      <br>
+                  <input type ="checkbox" name = 'Toyotaa' value = "Toyota"> Adobe Photoshop
+                  <br>
+                <input type ="checkbox" name = 'Honda' value = "Honda"> Adobe Acrobate 11
+                  <br>
+                <input type ="checkbox" name = 'Nissan' value = "Nissan"> Microsoft Office Suite
+                            <br>
+                  <input type ="checkbox" name = 'Toyotaa' value = "Toyota"> Facebook
+                  <br>
+                <input type ="checkbox" name = 'Honda' value = "Honda"> Visual Studio
+                  <br>
+                <input type ="checkbox" name = 'Nissan' value = "Nissan"> Teradata
+                            <br>
+                  <input type ="checkbox" name = 'Toyotaa' value = "Toyota"> Google Drive
+                  <br>
+                <input type ="checkbox" name = 'Honda' value = "Honda"> Spotify
+                  <br>
+                <input type ="checkbox" name = 'Nissan' value = "Nissan"> SQL Developer
+                  
+                  </td>
+                  
+            <td> Prices for Licenses of Softwares
+                <br>
+                $130
+                <br>
+                $200
+                 <br>
+                $130
+                <br>
+                $300
+                 <br>
+                $220
+                <br>
+                $210
+                 <br>
+                $190
+                <br>
+                $80
+                 <br>
+                $90
+                 </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a class="survery">Billing information:
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+            
+            
+            <tr>
+                <td>
+                    Complete Billing Street Address:
+                    <br>
+                     <input type='text' name='address' id='address' placeholder="3001 Skyway Circle N" value="">
+                    <br>
+                    City:
+                    <br>
+                     <input type='text' name='city' id='city' placeholder="Dallas" value="">
+                    <br>
+                    State:
+                    <br>
+                      <select name="STATES">
+                        <option value="">Select a State</option>
+                        <option value="AL">Alabama</option>
+                         <option value="AK">Alaska</option>
+                         <option value="AZ">Arizona</option>
+                         <option value="AR">Arkansas</option>
+                         <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                         <option value="DE">Delaware</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                         <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>  
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                         <option value="IA">IOWA</option>
+                         <option value="KS">Kansas</option>
+                         <option value="KY">Kentucky</option>
+                         <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                         <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                         <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option> 
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                         <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                         <option value="NY">NEW YORK</option>
+                        <option value="NC">North Carolina</option> 
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Okhlama</option>
+                        <option value="OR">Oregan</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South DAKOTA</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washinton</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="Wy">Wyoming</option>
+                    </select>
+                    
+                </td>
+                
+                <td>
+                    ZipCode:
+                    <br>
+                     <input type='Number' name='Zip' id='zip' placeholder="78753" value="">
+                    <br>
+                    Country:
+                    <br>
+                     <input type='text' name='country' id='country' placeholder="United States America" value="">
+                    
+                
+                </td>
+            
+            
+            </tr>
+            
+            
+            <tr>
+                        <td>
+                            <a class="survery"> Consent: </a>
+                            <br>
+                            <input type ="checkbox" name = 'consent' value = "sign"> I, Hereby certify by checking this box that all aforementioned information is real and true. I understand, by checking this box I permit IACO Inc. to access my personal information and charge for the services.
+                            <br>
+                            Your Initials: 
+                            <input type='text' name='initials' id='in' placeholder="Initials" value="">
+                        
+                        
+                        </td>
+                <td></td>
+                    </tr>
+            
+            
+            
+              <tr>
+                 <td><a class="survery">Overall, How happy are you with the services of IACO Inc.</a>  
+                 <br>
+                <input type ="radio" name = 'gender' value = "Excellent"> Excellent
+                <br>
+                <input type ="radio" name = 'gender' value = "Female"> Very Good
+                <br>
+                <input type ="radio" name = 'gender' value = "Other"> Good
+                <br>
+                <input type ="radio" name = 'gender' value = "Other"> Average
+                <br>
+                <input type ="radio" name = 'gender' value = "Other"> Below Average
+                <br>
+                <input type ="radio" name = 'gender' value = "Other"> Poor
+                <br>
+                <input type ="radio" name = 'gender' value = "Other"> Bad
+                 </td>
+            <td> 
+                 </td>
+            </tr>
+        
+        </tbody> 
+    </table>
+       
+       <a class="survery">
+       <input type="submit" value="submit">
+       </a>
+    </form>
+    
+    
+  
+</body>
+</html>
