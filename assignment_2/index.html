@@ -3,24 +3,90 @@
 <head>
     <title> IACO </title>
     <link rel="stylesheet" href="style.css">
-    <link rel='stylesheet' href='/project_6/node_modules/bootstrap/dist/css/bootstrap.css'>
+    <link rel='stylesheet' href='/assignment_2/node_modules/bootstrap/dist/css/bootstrap.css'>
+    
     
 </head>
 <body>
- 
     
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
+    
+    <div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#register" aria-controls="register" role="tab" data-toggle="tab">Register</a></li>
+    <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
+  </ul>
+
+  <!-- home pane -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+        
+        <p class="fontss">
+        iPhone 6S Promotion
+        </p>
+        <p class="fontss1">
+        Get a iPad Pro and get 50% OFF on your new iPhone 6S        
+        </p>
+        
+      
+
+        
+<img class="imgsize" src="iaco_1.png" class="img-rounded" width="650px" >     
+      
+      <hr>
+        
+    <a class="fontss2">
+        
+        More ways to shop: Visit an IACO Store, call 1-800-MY-IACO, or find a reseller.
+        </a>    
+        <br>
+        <a class="fontss2">
+        
+        Copyright © 2016 Apple Inc. All rights reserved. Privacy Policy | Terms of Use | Sales and Refunds | Legal | Site Map 
+        
+        </a>
+      
+      
+      </div>
+      
+      <!-- Register Tab-->
+      
+    <div role="tabpanel" class="tab-pane" id="register">
+        
+       <h2> Custom Descriptions: </h2> 
+           <br>
+     <p>
+A Custom Account Description can be established for each unique Activity/Account or Project/Account combination. The same Account value used in separate Activities or Projects may have different custom descriptions. Each Custom Account Description will consist of the system maintained short description for the specified Account value (10 characters) followed by a “:” followed by up to 19 characters determined by the Responsible Person (or designee) of each Activity or Project.
+         <br>
+        </p>
+       <p>  Information provided on the previous page will be brought forward to this page. Accounts will be listed in numerical sequence.
+The user-defined portion of the custom description will be in a box on the far right of each line. Blank boxes indicate that a custom description currently is not defined. If there is a current custom description, it will appear in the box.
+Change the content of the custom description box to what is desired. Please enter information in upper case.*Filling in a blank box will create a new description.*Changing the content will change the description.*Deleting the content (making it blank) will delete a description.
+Print this page and send or fax a copy to the office indicated at the bottom of the page to have the Custom Account Description created.
+If you need to submit another request, click on the “Reset and Re-Enter Activity (Project) and Accounts” button at the bottom of the page and repeat the process.
+           </p>
+        
+        
+        
+        <img class="imgsize" src="iaco_2.png" class="img-rounded" width="200px" >  
+        
+        <br>
+      
+      <!-- Button trigger modal -->
+        
+<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal1">
+  Sign Up
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">Account Information</h4>
       </div>
       <div class="modal-body">
         <form name = "form2" method="post">
@@ -71,61 +137,8 @@
                  </div>
             </div>
             
-           <div class="row">
-               
-               <div class="col-md-8">
-            <a class="survery"> Choose the Applications you want to purchase for your project from IACO Inc.</a>
-               </div>
-               </div>
-            
-              <div class="row">
-                  
-                  <div class="col-md-4">
-                      <br>
-                  <input type ="checkbox" name = 'Toyotaa' value = "Toyota"> Adobe Photoshop
-                  <br>
-                <input type ="checkbox" name = 'Honda' value = "Honda"> Adobe Acrobate 11
-                  <br>
-                <input type ="checkbox" name = 'Nissan' value = "Nissan"> Microsoft Office Suite
-                            <br>
-                  <input type ="checkbox" name = 'Toyotaa' value = "Toyota"> Facebook
-                  <br>
-                <input type ="checkbox" name = 'Honda' value = "Honda"> Visual Studio
-                  <br>
-                <input type ="checkbox" name = 'Nissan' value = "Nissan"> Teradata
-                            <br>
-                  <input type ="checkbox" name = 'Toyotaa' value = "Toyota"> Google Drive
-                  <br>
-                <input type ="checkbox" name = 'Honda' value = "Honda"> Spotify
-                  <br>
-                <input type ="checkbox" name = 'Nissan' value = "Nissan"> SQL Developer
-                  
-                  </div>
-                  
-            <div class="col-md-4"> Prices for Licenses of Softwares
-                <br>
-                $130
-                <br>
-                $200
-                 <br>
-                $130
-                <br>
-                $300
-                 <br>
-                $220
-                <br>
-                $210
-                 <br>
-                $190
-                <br>
-                $80
-                 <br>
-                $90
-                  </div>
-            </div>
-            
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-8">
                     <a class="survery">Billing information:
                     </a>
                 </div>
@@ -230,29 +243,6 @@
                 
             </div>
             
-            
-            
-              <div class="row">
-                  
-                 <div class="col-md-8"><a class="survery">Overall, How happy are you with the services of IACO Inc.</a>  
-                 <br>
-                <input type ="radio" name = 'gender' value = "Excellent"> Excellent
-                <br>
-                <input type ="radio" name = 'gender' value = "Female"> Very Good
-                <br>
-                <input type ="radio" name = 'gender' value = "Other"> Good
-                <br>
-                <input type ="radio" name = 'gender' value = "Other"> Average
-                <br>
-                <input type ="radio" name = 'gender' value = "Other"> Below Average
-                <br>
-                <input type ="radio" name = 'gender' value = "Other"> Poor
-                <br>
-                <input type ="radio" name = 'gender' value = "Other"> Bad
-                  </div>
-        
-            </div>
-
        <a class="survery">
      <button type="button" class="btn btn-primary">Submit</button>
        </a>
@@ -266,11 +256,67 @@
     </div>
   </div>
 </div>
+       
+        <!-- sign in buttonl -->
+<button type="button" class="btn btn-default btn-lg btn-block" data-toggle="modal" data-target="#myModal">
+  Login
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"> Sign In</h4>
+      </div>
+      <div class="modal-body">
+          
+          <form name = "form2" method="post">
+       
+       <div class="container-fluid">
+              <div class="row">
+                        
+            <div class="col-md-4"> Login Information:
+                <br>
+                <input type='email' name='uname' id='uname' placeholder="email@iacotech.com" value="">
+                <br>
+                <input type='password' name='password' id='password' placeholder="password" value="">
+                  </div>   
+            </div>
+      </div>
+              </form>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>    
+      
+      
+  </div>
+
+</div>
+ 
+    </div>
+  </div>
+      
+        <!--About us Pane-->
+        
+      
+    <div role="tabpanel" class="tab-pane" id="aboutus">
+        
+        
+        
+        
+        </div>
+  
     
     
     
-    <script type="text/javascript" src="/project_6/node_modules/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="/project_6/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/assignment_2/node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/assignment_2/node_modules/bootstrap/dist/js/bootstrap.js"></script>
     
 </body>
 </html>

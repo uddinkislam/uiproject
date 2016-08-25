@@ -1,0 +1,44 @@
+.ss{ 
+    column-width: 200px;
+}
+.survery{font-size: 24px;
+    font-style: oblique;
+    color: black
+        
+}
+.columnsize{
+   box-sizing: border-box
+}
+.heading{
+    font-size: 50px;
+
+}
+.imgsize{ 
+    
+    display: block;
+    margin: auto;
+    
+ 
+}
+.fontss{
+    font-size: 55px;
+    font-family: sans-serif;
+    font-style: normal;
+    color: coral;
+    text-align: center
+}
+.fontss1{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-style: normal;
+    color: orange;
+    text-align: center
+}
+.fontss2{
+    font-size: 12px;
+    font-family: sans-serif;
+    font-style: normal;
+    color: darkgrey;
+    text-align: center
+    
+}

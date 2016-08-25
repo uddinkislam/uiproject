@@ -1,0 +1,15 @@
+.ss{ 
+    column-width: 200px;
+}
+.survery{font-size: 24px;
+    font-style: oblique;
+    color: black
+        
+}
+.columnsize{
+   box-sizing: border-box
+}
+.heading{
+    font-size: 50px;
+
+}
