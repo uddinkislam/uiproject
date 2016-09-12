@@ -1,0 +1,384 @@
+<!doctype html>
+<html>
+<head>
+    <title> IACO </title>
+    <link rel="stylesheet" href="/assignment_4/css/style.css">
+    <link rel='stylesheet' href='/assignment_5/node_modules/bootstrap/dist/css/bootstrap.css'>
+    
+    
+</head>
+<body ng-app="assignmentApp">
+    
+    
+    <div ng-controller = "AppCtrl">  
+        
+        
+    <!--
+        {{::itemTypes}}
+        {{::ceoMsg.body}}
+        {{::title}}
+    
+    -->
+    </div>
+    
+     <!-- create a different file for this menu bar and create a directive for it. -->
+    
+    <div class="dropdown">
+  <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+<span class="glyphicon glyphicon-th-list" aria-hidden="true">   </span>
+    Shop by Category
+  <!--  <span class="caret"></span> -->
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Cell Phones</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+    <div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#register" aria-controls="register" role="tab" data-toggle="tab">Register</a></li>
+    <li role="presentation"><a href="#aboutus" aria-controls="aboutus" role="tab" data-toggle="tab">About Us</a></li>
+  </ul>
+
+  <!-- home pane -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+        
+        <p class="fontss">
+        iPhone 6S Promotion
+        </p>
+        <p class="fontss1">
+        Get a iPad Pro and get 50% OFF on your new iPhone 6S        
+        </p>
+        
+      
+
+        
+<img class="imgsize" src="/assignment_4/static/images/iaco_1.png" class="img-rounded" width="650px" >     
+      
+      <hr>
+        
+    <a class="fontss2">
+        
+        More ways to shop: Visit an IACO Store, call 1-800-MY-IACO, or find a reseller.
+        </a>    
+        <br>
+        <a class="fontss2">
+        
+        Copyright © 2016 Apple Inc. All rights reserved. Privacy Policy | Terms of Use | Sales and Refunds | Legal | Site Map 
+        
+        </a>
+      
+      
+      </div>
+      
+      <!-- Register Tab-->
+      
+    <div role="tabpanel" class="tab-pane" id="register">
+        
+       <h2> Custom Descriptions: </h2> 
+           <br>
+     <p>
+A Custom Account Description can be established for each unique Activity/Account or Project/Account combination. The same Account value used in separate Activities or Projects may have different custom descriptions. Each Custom Account Description will consist of the system maintained short description for the specified Account value (10 characters) followed by a “:” followed by up to 19 characters determined by the Responsible Person (or designee) of each Activity or Project.
+         <br>
+        </p>
+       <p>  Information provided on the previous page will be brought forward to this page. Accounts will be listed in numerical sequence.
+The user-defined portion of the custom description will be in a box on the far right of each line. Blank boxes indicate that a custom description currently is not defined. If there is a current custom description, it will appear in the box.
+Change the content of the custom description box to what is desired. Please enter information in upper case.*Filling in a blank box will create a new description.*Changing the content will change the description.*Deleting the content (making it blank) will delete a description.
+Print this page and send or fax a copy to the office indicated at the bottom of the page to have the Custom Account Description created.
+If you need to submit another request, click on the “Reset and Re-Enter Activity (Project) and Accounts” button at the bottom of the page and repeat the process.
+           </p>
+        
+        
+        
+        <img class="imgsize" src="/assignment_4/static/images/iaco_2.png" class="img-rounded" width="200px" >  
+        
+        <br>
+      
+      <!-- Button trigger modal -->
+        
+<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal1">
+  Sign Up
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Account Information</h4>
+      </div>
+      <div class="modal-body">
+        <form name = "form2" method="post">
+       
+       <div class="container-fluid">
+              <div class="row">
+            <div class="col-md-4"> Personal Details:
+                <br>
+                  Name:
+                <br>
+             <input type='text' name='name' id='name' placeholder="last name" value="">
+             <input type='text' name='uname' id='uname' placeholder="first name" value="">
+                  <br>
+                Organization:
+                <br>
+                <input type='text' name='company' id='company' placeholder="your company" value="">
+                  </div> 
+            
+            <div class="col-md-4"> Login Information:
+                <br>
+                <input type='text' name='uname' id='uname' placeholder="choose username" value="">
+                <br>
+                <input type='password' name='password' id='password' placeholder="choose password" value="">
+                  </div>   
+            </div>
+            
+            
+             <div class="row">
+            <div class="col-md-4"> Email:
+                <br>
+            <input type='text' name='name' id='name' placeholder="example@gmail.com" value="">
+                <br>
+                Phone Number:
+                <br>
+                <input type='number' name='number' id='name' placeholder="+1-800-000-0000" value="">
+
+                 
+                 
+                 </div>
+            <div class="col-md-4">                    Select the Security Question
+                <select name ="questions">
+                <option value="null">select a security question </option>
+                <option value="afg"> What was your high school name? </option>
+                <option value="alg"> What city your spouse meet? </option>
+                <option value="alb"> What was your first car's model? </option>
+                <option value="usa"> What is your pet's name? </option>
+                </select>
+                 </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-8">
+                    <a class="survery">Billing information:
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class="row">
+                <div class="col-md-4">
+                    Complete Billing Street Address:
+                    <br>
+                     <input type='text' name='address' id='address' placeholder="3001 Skyway Circle N" value="">
+                    <br>
+                    City:
+                    <br>
+                     <input type='text' name='city' id='city' placeholder="Dallas" value="">
+                    <br>
+                    State:
+                    <br>
+                      <select name="STATES">
+                        <option value="">Select a State</option>
+                        <option value="AL">Alabama</option>
+                         <option value="AK">Alaska</option>
+                         <option value="AZ">Arizona</option>
+                         <option value="AR">Arkansas</option>
+                         <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                         <option value="DE">Delaware</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                         <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>  
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                         <option value="IA">IOWA</option>
+                         <option value="KS">Kansas</option>
+                         <option value="KY">Kentucky</option>
+                         <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                         <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                         <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option> 
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                         <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                         <option value="NY">NEW YORK</option>
+                        <option value="NC">North Carolina</option> 
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Okhlama</option>
+                        <option value="OR">Oregan</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South DAKOTA</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washinton</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="Wy">Wyoming</option>
+                    </select>
+                    
+                </div>
+                
+                <div class="col-md-4">
+                    ZipCode:
+                    <br>
+                     <input type='Number' name='Zip' id='zip' placeholder="78753" value="">
+                    <br>
+                    Country:
+                    <br>
+                     <input type='text' name='country' id='country' placeholder="United States America" value="">
+                    
+                
+                </div>
+            
+            
+            </div>
+            
+            
+            <div class="row">
+                        <div class="col-md-8">
+                            <a class="survery"> Consent: </a>
+                            <br>
+                            <input type ="checkbox" name = 'consent' value = "sign"> I, Hereby certify by checking this box that all aforementioned information is real and true. I understand, by checking this box I permit IACO Inc. to access my personal information and charge for the services.
+                            <br>
+                            Your Initials: 
+                            <input type='text' name='initials' id='in' placeholder="Initials" value="">
+                        
+                        
+                </div>
+                
+            </div>
+            
+       <a class="survery">
+     <button type="button" class="btn btn-primary">Submit</button>
+       </a>
+       </div>
+    </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+       
+        <!-- sign in buttonl -->
+<button type="button" class="btn btn-default btn-lg btn-block" data-toggle="modal" data-target="#myModal">
+  Login
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"> Sign In</h4>
+      </div>
+      <div class="modal-body">
+     
+    <!-- Sign in form -->      
+          
+          <form class="form-inline">
+  <div class="form-group">
+    <label class="sr-only" id="lblemail">Email address</label>
+    <input type="email" class="form-control" id="email" placeholder="Email"> <br>
+      <span id="emailerr" class="error"></span>
+  </div>
+  <div class="form-group">
+    <label class="sr-only" id="lblpass">Password</label>
+    <input type="password" class="form-control" id="pass" placeholder="Password"> <br>
+      <span id="passerr" class="error"></span>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+  </div>
+  
+</form>
+          
+          
+    <!-- old signin form -->      
+          
+       <!--   <form name = "form2" method="post">
+       
+       <div class="container-fluid">
+              <div class="row">
+                        
+            <div class="col-md-4">
+                <label id="lbllogin">Login Information:</label>
+                  </div>
+                  <div class="col-md-4">
+                
+                <input type='email' name='email' id='email' placeholder="email@iacotech.com" value="">
+                
+                <input type='password' name='pass' id='pass' placeholder="password" value="">
+                  </div>   
+            </div>
+      </div>
+              </form> -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="login()">Login</button>
+      </div>
+    </div>
+  </div>
+</div>    
+      
+      
+  </div>
+
+</div>
+ 
+    </div>
+  </div>
+      
+        <!--About us Pane-->
+        
+      
+    <div role="tabpanel" class="tab-pane" id="aboutus">
+        
+        
+        
+        
+        </div>
+  
+    <script type="text/javascript" src="/assignment_5/node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/assignment_5/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/assignment_5/node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="/assignment_5/js/script.js"></script>
+    <script type="text/javascript" src="/assignment_5/js/controller/AppCtrl.js"></script>
+    
+</body>
+</html>
