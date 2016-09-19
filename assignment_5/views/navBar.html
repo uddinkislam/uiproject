@@ -1,0 +1,13 @@
+<div class="dropdown">
+  <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+<span class="glyphicon glyphicon-th-list" aria-hidden="true">   </span>
+    Shop by Category
+   <span class="caret"></span> 
+  </button>
+  
+  <ol class="dropdown-menu flex-container">
+    <li ng-repeat="productType in productTypes" class="flex-item"> 
+      {{productType}}
+      </li>
+  </ol>
+</div>

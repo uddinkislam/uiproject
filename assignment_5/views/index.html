@@ -2,15 +2,17 @@
 <html>
 <head>
     <title> IACO </title>
-    <link rel="stylesheet" href="/assignment_4/css/style.css">
-    <link rel='stylesheet' href='/assignment_5/node_modules/bootstrap/dist/css/bootstrap.css'>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel='stylesheet' href='/node_modules/bootstrap/dist/css/bootstrap.css'>
     
     
 </head>
-<body ng-app="assignmentApp">
+<body ng-app="shoppingCart">
+    <div ng-controller="appCtrl">
+    <nav-bar>  </nav-bar>
     
     
-    <div ng-controller = "AppCtrl">  
+    </div>
         
         
     <!--
@@ -19,15 +21,14 @@
         {{::title}}
     
     -->
-    </div>
     
      <!-- create a different file for this menu bar and create a directive for it. -->
     
-    <div class="dropdown">
+  <!--  <div class="dropdown">
   <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 <span class="glyphicon glyphicon-th-list" aria-hidden="true">   </span>
     Shop by Category
-  <!--  <span class="caret"></span> -->
+  <!--  <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
     <li><a href="#">Cell Phones</a></li>
@@ -36,7 +37,7 @@
     <li role="separator" class="divider"></li>
     <li><a href="#">Separated link</a></li>
   </ul>
-</div>
+</div> -->
 
     
     
@@ -68,7 +69,7 @@
       
 
         
-<img class="imgsize" src="/assignment_4/static/images/iaco_1.png" class="img-rounded" width="650px" >     
+<img class="imgsize" src="/static/images/iaco_1.png" class="img-rounded" width="650px" >     
       
       <hr>
         
@@ -105,7 +106,7 @@ If you need to submit another request, click on the “Reset and Re-Enter Activi
         
         
         
-        <img class="imgsize" src="/assignment_4/static/images/iaco_2.png" class="img-rounded" width="200px" >  
+        <img class="imgsize" src="/static/images/iaco_2.png" class="img-rounded" width="200px" >  
         
         <br>
       
@@ -374,11 +375,13 @@ If you need to submit another request, click on the “Reset and Re-Enter Activi
         
         </div>
   
-    <script type="text/javascript" src="/assignment_5/node_modules/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="/assignment_5/node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script type="text/javascript" src="/assignment_5/node_modules/angular/angular.js"></script>
-    <script type="text/javascript" src="/assignment_5/js/script.js"></script>
-    <script type="text/javascript" src="/assignment_5/js/controller/AppCtrl.js"></script>
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="/js/shoppingCart.js"></script>
+    <script type="text/javascript" src="/js/controller/appCtrl.js"></script>
+    <script type="text/javascript" src="/js/directive/navBar.js"></script>
+    <script type="text/javascript" src="/js/service/productTypeService.js"></script>
     
 </body>
 </html>

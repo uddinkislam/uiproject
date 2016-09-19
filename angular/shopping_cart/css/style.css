@@ -2,3 +2,14 @@
     display: flex;
     flex-direction: column;
 }
+.flex-item{
+    background: black;
+    color: white;
+    cursor: pointer;
+    
+}
+.flex-item:hover{
+    background: white;
+    color: black;
+    
+}

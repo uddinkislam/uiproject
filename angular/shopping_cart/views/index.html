@@ -15,24 +15,30 @@
        
        
     
-    <div ng-controller = 'AppCtrl'>
+    <div ng-controller = 'appCtrl'>
         
         <app-title>  </app-title>         <!--  //using as an element -->
         <div app-title>   </div>           <!--//using as attribute-->
         <div class="app-title"> </div>   <!--// using as class-->
+        <nav-bar></nav-bar>
+<!--
+        <ol class="flex-container">
+    <li ng-repeat ='itemType in itemTypes' class="flex-item">
+        {{itemType}}
+    </li>
         
+</ol>
+-->
+        
+<!--
     <input type="text" ng-model="person.name" id="name">
         
         {{person.name}}    //this two way binding
         {{::person.name}}   //this is single way binding
         
         
-        <ol class="flex-container">
-    <li ng-repeat ='itemTypes in itemTypes'>
-    {{itemTypes}}
-        </li>
         
-    </ol>
+-->
     
     </div>
        
@@ -46,7 +52,10 @@
     
 <script type="text/javascript" src="/node_modules/angular/angular.js"></script>
 <script type="text/javascript" src="/js/project_1.js"></script>
-<script type="text/javascript" src="/js/controllers/AppCtrl.js"></script>
-<script type="text/javascript" src="/js/directives/appTitle.js"></script>       
+<script type="text/javascript" src="/js/controllers/appCtrl.js"></script>
+<script type="text/javascript" src="/js/directives/appTitle.js"></script>
+<script type="text/javascript" src="/js/directives/navBar.js"></script>
+<script type="text/javascript" src="/js/services/itemTypeService.js"></script>      
+       
     </body>
 </html>

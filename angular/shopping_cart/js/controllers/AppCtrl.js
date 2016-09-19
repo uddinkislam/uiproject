@@ -1,12 +1,7 @@
-angular.module('shoppingCart').controller('AppCtrl',function($scope){
-    $scope.person ={ 
-      'name':  'Islamuddin Noor'
-    
-    };
-    
-    $scope.itemTypes =[  'Appliances', 'TV & Home Theater', 'Computers', 'Cell Phones', 'Game Consoles'];
+angular.module('shoppingCart').controller('appCtrl',['$scope', 'itemTypesService', function($scope, itemTypesService){
+    console.log(itemTypesService.itemTypes);
+
+    $scope.itemTypes= itemTypesService.itemTypes;
     
     
-    
-    
-});
+}]);
