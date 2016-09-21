@@ -1,0 +1,41 @@
+<!DOCtype>
+<html ng-app="sampleView">
+<head>
+    
+    </head>
+<body>
+    <h1> Sample with ng-view</h1>
+    <nav>  
+    <ul>
+        <li><a href="#!/home">Home</a></li>
+        <li><a href="#!/error">Error </a></li>
+        
+        </ul>
+</nav>    
+    
+<!--
+    <div ng-controller = "sampleViewCtrl">
+    
+    {{home.title}}
+    
+    </div>
+-->
+    
+    
+    <!-- Controller for ng-view where contents gets loaded from the route-->
+    <div ng-view></div>
+    
+    
+   
+    
+    
+    
+    <script type="text/javascript" src="/node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="/node_modules/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="/js/sampleView.js"></script>
+    <script type="text/javascript" src="/js/controllers/sampleViewCtrl.js"></script>
+    <script type="text/javascript" src="/js/controllers/homeCtrl.js"></script>
+    </body>
+
+
+</html>
