@@ -2,6 +2,8 @@ angular.module("shopping_cart").service("product_type_service", ["$http", functi
     
     
     //calling inventory_type
+    this.productTypes = "Hello World";
+    var obj =this;
     
         
     $http.get("/service/inventory_type").then(function(response){
@@ -9,19 +11,8 @@ angular.module("shopping_cart").service("product_type_service", ["$http", functi
         console.log("End of response");
         //this.productTypes={};
         
-       
-        
-        var productTypes= response.data;
-        
-        
-        
-        
-        
-//        var insertValues={};
-//        for(var i=0; i=productTypes.length, i++){
-//            insertValues[productTypes[i]=]
-//        }
-        console.log(productTypes);
+        obj.productTypes= response.data;
+        console.log(obj.productTypes);
     });
     
 }]);
